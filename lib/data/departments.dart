@@ -1,0 +1,86 @@
+const List<String> departments = [
+  'CSE',
+  'ECE',
+  'EEE',
+  'MECH',
+  'AI & DS',
+  'IT',
+  'CSBS',
+];
+
+const Map<String, Map<int, List<String>>> departmentSubjects = {
+  'CSE': {
+    1: ['Engineering Mathematics I', 'Engineering Physics', 'Engineering Chemistry', 'Problem Solving Using C', 'Technical English I', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Data Structures', 'Object Oriented Programming', 'Digital Principles', 'Technical English II', 'Environmental Science'],
+    3: ['Discrete Mathematics', 'Design and Analysis of Algorithms', 'Computer Organization', 'Operating Systems', 'Database Management Systems', 'Java Programming'],
+    4: ['Theory of Computation', 'Computer Networks', 'Software Engineering', 'Web Technology', 'Artificial Intelligence', 'Probability and Statistics'],
+    5: ['Compiler Design', 'Object Oriented Analysis and Design', 'Distributed Systems', 'Cloud Computing', 'Professional Elective I'],
+    6: ['Machine Learning', 'Cryptography and Network Security', 'Mobile Application Development', 'Big Data Analytics', 'Professional Elective II'],
+    7: ['Internet of Things', 'Generative AI', 'Software Project Management', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'ECE': {
+    1: ['Engineering Mathematics I', 'Engineering Physics', 'Engineering Chemistry', 'Problem Solving Using C', 'Technical English I', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Electronic Devices', 'Circuit Analysis', 'Digital Logic Circuits', 'Technical English II', 'Environmental Science'],
+    3: ['Signals and Systems', 'Electromagnetic Fields', 'Electronic Circuits I', 'Digital Signal Processing', 'Control Systems', 'Probability and Random Processes'],
+    4: ['Communication Systems', 'Microprocessors and Microcontrollers', 'Electronic Circuits II', 'Linear Integrated Circuits', 'VLSI Design', 'Computer Networks'],
+    5: ['Digital Communication', 'Antenna and Wave Propagation', 'Embedded Systems', 'Digital Image Processing', 'Professional Elective I'],
+    6: ['Wireless Communication', 'Optical Communication', 'IoT and Applications', 'Microwave Engineering', 'Professional Elective II'],
+    7: ['5G Communication', 'RF System Design', 'Embedded AI', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'EEE': {
+    1: ['Engineering Mathematics I', 'Engineering Physics', 'Engineering Chemistry', 'Problem Solving Using C', 'Technical English I', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Electrical Circuit Theory', 'Electromagnetic Theory', 'Electronic Devices', 'Technical English II', 'Environmental Science'],
+    3: ['Electrical Machines I', 'Power Systems I', 'Measurements and Instrumentation', 'Power Electronics', 'Digital Logic Circuits', 'Signals and Systems'],
+    4: ['Electrical Machines II', 'Power Systems II', 'Control Systems', 'Microprocessors', 'Power System Analysis', 'Renewable Energy Systems'],
+    5: ['High Voltage Engineering', 'Protection and Switchgear', 'Embedded Systems', 'Smart Grid', 'Professional Elective I'],
+    6: ['Electric Drives', 'Power Quality', 'Energy Management', 'Industrial Automation', 'Professional Elective II'],
+    7: ['Electric Vehicle Technology', 'IoT for Energy Systems', 'Power System Operation', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'MECH': {
+    1: ['Engineering Mathematics I', 'Engineering Physics', 'Engineering Chemistry', 'Engineering Graphics', 'Technical English I', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Engineering Mechanics', 'Manufacturing Processes', 'Engineering Materials', 'Technical English II', 'Environmental Science'],
+    3: ['Thermodynamics', 'Fluid Mechanics', 'Strength of Materials', 'Kinematics of Machinery', 'Machine Drawing', 'Metrology and Measurements'],
+    4: ['Dynamics of Machinery', 'Heat and Mass Transfer', 'Manufacturing Technology', 'Design of Machine Elements', 'CAD/CAM', 'Theory of Machines'],
+    5: ['Internal Combustion Engines', 'Finite Element Analysis', 'Mechatronics', 'Automobile Engineering', 'Professional Elective I'],
+    6: ['Robotics and Automation', 'CNC Technology', 'Renewable Energy Systems', 'Industrial Engineering', 'Professional Elective II'],
+    7: ['Electric and Hybrid Vehicles', 'Additive Manufacturing', 'Advanced Manufacturing', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'AI & DS': {
+    1: ['Engineering Mathematics I', 'Programming in C', 'Engineering Physics', 'Technical English I', 'Problem Solving', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Python Programming', 'Data Structures', 'Digital Principles', 'Technical English II', 'Environmental Science'],
+    3: ['Probability and Statistics', 'Database Management Systems', 'Object Oriented Programming', 'Data Visualization', 'Discrete Mathematics', 'Computer Organization'],
+    4: ['Machine Learning', 'Data Mining', 'Artificial Intelligence', 'Operating Systems', 'Computer Networks', 'Big Data Analytics'],
+    5: ['Deep Learning', 'Natural Language Processing', 'Cloud Computing', 'Data Engineering', 'Professional Elective I'],
+    6: ['Computer Vision', 'Generative AI', 'Recommender Systems', 'MLOps', 'Professional Elective II'],
+    7: ['Advanced Machine Learning', 'Large Language Models', 'Responsible AI', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'IT': {
+    1: ['Engineering Mathematics I', 'Programming in C', 'Engineering Physics', 'Technical English I', 'Problem Solving', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Data Structures', 'Object Oriented Programming', 'Digital Principles', 'Technical English II', 'Environmental Science'],
+    3: ['Discrete Mathematics', 'Database Management Systems', 'Computer Organization', 'Operating Systems', 'Java Programming', 'Web Technology'],
+    4: ['Computer Networks', 'Software Engineering', 'Theory of Computation', 'Cloud Computing', 'Artificial Intelligence', 'Mobile Computing'],
+    5: ['Web Application Development', 'Cyber Security', 'Data Analytics', 'Distributed Systems', 'Professional Elective I'],
+    6: ['DevOps', 'Cloud Architecture', 'Mobile App Development', 'Big Data', 'Professional Elective II'],
+    7: ['Internet of Things', 'Generative AI', 'Enterprise Application Development', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+  'CSBS': {
+    1: ['Engineering Mathematics I', 'Programming in C', 'Engineering Physics', 'Technical English I', 'Business Economics', 'Heritage of Tamil'],
+    2: ['Engineering Mathematics II', 'Data Structures', 'Object Oriented Programming', 'Digital Principles', 'Technical English II', 'Environmental Science'],
+    3: ['Discrete Mathematics', 'Database Management Systems', 'Computer Organization', 'Operating Systems', 'Java Programming', 'Business Communication'],
+    4: ['Computer Networks', 'Software Engineering', 'Artificial Intelligence', 'Web Technology', 'Financial Accounting', 'Organizational Behaviour'],
+    5: ['Business Analytics', 'Cloud Computing', 'Data Science', 'Enterprise Resource Planning', 'Professional Elective I'],
+    6: ['Machine Learning', 'Digital Marketing', 'FinTech', 'Cyber Security', 'Professional Elective II'],
+    7: ['Generative AI', 'Business Intelligence', 'Project Management', 'Professional Elective III', 'Project Work I'],
+    8: ['Project Work II', 'Internship / Industrial Training', 'Professional Elective IV', 'Open Elective'],
+  },
+};
+
+List<String> subjectsFor(String department, int semester) {
+  return departmentSubjects[department]?[semester] ?? [];
+}
