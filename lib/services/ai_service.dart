@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class AiService {
   static const baseUrl = String.fromEnvironment(
     'AI_BACKEND_URL',
-    defaultValue: 'http://172.17.42.187:3000',
+    defaultValue: 'https://study-share.vercel.app',
   );
 
   static Future<Map<String, dynamic>> summarize(PlatformFile file) async {
