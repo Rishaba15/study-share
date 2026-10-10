@@ -74,8 +74,5 @@
         }
       ]
     }
-  ],
-  "images": {
-    "disableOptimization": true
-  }
+  ]
 }
